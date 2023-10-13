@@ -13,7 +13,7 @@ async def process_start_command(message: types.Message):
     markup.add(types.KeyboardButton('/Розклад'))
     markup.add(types.KeyboardButton('/Переглянути ДЗ'))
     markup.add(types.KeyboardButton('/Додати ДЗ'))
-    await message.answer('Вітаю ви стали частинкою самого йобнутого класу в школі №6! Чим можу допомогти?',
+    await message.answer('Вітаю ви стали частинкою самого гучного класу в школі №6! Чим можу допомогти?',
                          reply_markup=markup)
 
 
