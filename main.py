@@ -6,7 +6,6 @@ from DATA import *
 bot = Bot(token="6358793399:AAGL6X9lDhBl-lNYV0YDCzZll3ju-7M2jQQ")
 dp = Dispatcher(bot)
 
-
 @dp.message_handler(commands=['start'])
 async def process_start_command(message: types.Message):
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=False)
@@ -15,7 +14,6 @@ async def process_start_command(message: types.Message):
     markup.add(types.KeyboardButton('/Додати ДЗ'))
     await message.answer('Вітаю ви стали частинкою самого гучного класу в школі №6! Чим можу допомогти?',
                          reply_markup=markup)
-
 
 @dp.message_handler(commands=['Розклад'])
 async def process_arcade_command(message: types.Message):
